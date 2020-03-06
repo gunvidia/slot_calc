@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box2{
+margin:10px;
+border:1px solid black;
+padding:10px;
+float:left;
+width:60px;
+}
+  #start{
+    width:265px;
+  }
+  .box3{
+    width:110px;
+  }
+  .se1{
+    color:red;
+  }
+  .se2{
+    color:blue;
+  }
+  .total{
+    font-size:1.2em;
+    font-weight:bold;
+    color:red;
+  }
+  .box4{background-color:#ff9999;}
+  .box5{background-color:#aabbaa;}
+</style>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>てすと</title>
+</head>
+<body>
+<h2>てすと</h2>
+<div>成功</div>
+<div class="box box2 box4" id="box1">左</div>
+<div class="box box2 box4" id="box2">中</div>
+<div class="box box2 box4" id="box3">右</div>
+<br clear=all>
+<div>失敗</div>
+<div class="box box2 box5" id="box4">左</div>
+<div class="box box2 box5" id="box5">中</div>
+<div class="box box2 box5" id="box6">右</div>
+<br clear=all>
+<div id="main"></div>
+<div class="box2 box3" id="restart">情報クリア</div>
+<br clear="all"/>
+</body>
+
+<script>
+var _0x2e16=['<span\x20class=\x27total\x27>トータル正解率：','◯－－','#restart','click','－✕－','floor','%</span><br>','show','\x20%</b><br>','\x20<b>','.box','data','#main','－－✕','html','✕－－','set','attr','.box3','substr'];(function(_0x5f04f3,_0x2e1667){var _0x293afd=function(_0x297ef5){while(--_0x297ef5){_0x5f04f3['push'](_0x5f04f3['shift']());}};_0x293afd(++_0x2e1667);}(_0x2e16,0x1f3));var _0x293a=function(_0x5f04f3,_0x2e1667){_0x5f04f3=_0x5f04f3-0x0;var _0x293afd=_0x2e16[_0x5f04f3];return _0x293afd;};var doc1=[];var doc2=[];var rireki=[];var rireki2=[];var rireki3=[];rireki[0x1]=0x0;rireki[0x2]=0x0;rireki[0x3]=0x0;rireki2[0x1]=0x0;rireki2[0x2]=0x0;rireki2[0x3]=0x0;rireki3[0x1]='';rireki3[0x2]='';rireki3[0x3]='';doc1[0x1]=_0x293a('0x2');doc2[0x1]=_0x293a('0x10');doc1[0x2]='－◯－';doc2[0x2]=_0x293a('0x5');doc1[0x3]='－－◯';doc2[0x3]=_0x293a('0xe');console['log'](Cookies['get'](_0x293a('0xc')));var totalgame=0x0;var f=[];f[0x1]='';f[0x2]='';f[0x3]='';var playgame=0x0;var koyaku=0x0;var seikai=0x0;$(_0x293a('0x3'))['on'](_0x293a('0x4'),function(){rireki[0x1]=0x0;rireki[0x2]=0x0;rireki[0x3]=0x0;rireki2[0x1]=0x0;rireki2[0x2]=0x0;rireki2[0x3]=0x0;rireki3[0x1]='';rireki3[0x2]='';rireki3[0x3]='';kekka();});$(_0x293a('0xb'))['on'](_0x293a('0x4'),function(){var _0xb8a98b=$(this)[_0x293a('0x12')]('id')[_0x293a('0x0')](0x3,0x1);if(_0xb8a98b>=0x4){_0xb8a98b=_0xb8a98b-0x3;rireki[_0xb8a98b]++;rireki3[_0xb8a98b]='✕'+rireki3[_0xb8a98b];}else{seikai++;rireki[_0xb8a98b]++;rireki2[_0xb8a98b]++;rireki3[_0xb8a98b]='◯'+rireki3[_0xb8a98b];}playgame++;kekka();});function start(){playgame=0x0;$(_0x293a('0xb'))[_0x293a('0x8')]();$(_0x293a('0x13'))[_0x293a('0x8')]();$(_0x293a('0xd'))[_0x293a('0xf')]('');}function kekka(){var _0x410f47=Math['floor'](seikai/playgame*0x2710)/0x64;var _0x50c049=Math[_0x293a('0x6')](rireki2[0x1]/rireki[0x1]*0x2710)/0x64;var _0x191e4c=Math['floor'](rireki2[0x2]/rireki[0x2]*0x2710)/0x64;var _0x4f707c=Math['floor'](rireki2[0x3]/rireki[0x3]*0x2710)/0x64;if(rireki[0x1]==0x0){_0x50c049='-';}if(rireki[0x2]==0x0){_0x191e4c='-';}if(rireki[0x3]==0x0){_0x4f707c='-';}var _0x5406e5=_0x293a('0x1')+_0x410f47+_0x293a('0x7');_0x5406e5+='左：'+rireki3[0x1]+_0x293a('0xa')+_0x50c049+_0x293a('0x9');_0x5406e5+='中：'+rireki3[0x2]+_0x293a('0xa')+_0x191e4c+_0x293a('0x9');_0x5406e5+='右：'+rireki3[0x3]+_0x293a('0xa')+_0x4f707c+_0x293a('0x9');$(_0x293a('0xd'))['html'](_0x5406e5);var _0x1fb4a5=[rireki,rireki2,rireki3,playgame,seikai];Cookies[_0x293a('0x11')](_0x293a('0xc'),_0x1fb4a5);}
+</script>
+</html>
